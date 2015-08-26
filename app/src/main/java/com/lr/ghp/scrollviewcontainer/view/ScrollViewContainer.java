@@ -229,6 +229,7 @@ public class ScrollViewContainer extends RelativeLayout {
                 mTimer.schedule(2);
                 try {
                     vt.recycle();
+                    vt = null;
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
