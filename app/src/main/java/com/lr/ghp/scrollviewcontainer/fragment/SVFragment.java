@@ -42,7 +42,8 @@ public class SVFragment extends Fragment {
         ButterKnife.inject(this, view);
         mainActivity= (MainActivity) getActivity();
         mainActivity.setScrollViewSlip(true);
-        text_vp.setText("第二个界面\nvp"+getIndex());
+//        text_vp.setText("第二个界面\nvp"+getIndex()+"\n普通界面");
+        text_vp.setText("第二个界面\nvp" + getArguments().getSerializable("index")+"\n普通界面");
         return view;
     }
 
